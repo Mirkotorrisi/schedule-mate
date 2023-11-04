@@ -1,49 +1,35 @@
-<p align="center">
-  <a href="https://www.gatsbyjs.com/?utm_source=starter&utm_medium=readme&utm_campaign=minimal-starter-ts">
-    <img alt="Gatsby" src="https://www.gatsbyjs.com/Gatsby-Monogram.svg" width="60" />
-  </a>
-</p>
-<h1 align="center">
-  Gatsby Minimal TypeScript Starter
-</h1>
+# Schedule Mate Documentation
 
-## 🚀 Quick start
+Schedule Mate is a service that allows professionals to schedule appointments with their clients by displaying their available time slots. Appointments are saved in the professional's Google Calendar, while appointment requests are received through a Telegram channel, which allows the professional to save the appointment to their calendar with the click of a button.
 
-1.  **Create a Gatsby site.**
+The service is built using Gatsby for the front end and Pipedream for the back end.
 
-    Use the Gatsby CLI to create a new site, specifying the minimal TypeScript starter.
+To reuse this service, follow these steps:
 
-    ```shell
-    # create a new Gatsby site using the minimal TypeScript starter
-    npm init gatsby -- -ts
-    ```
+## Getting Started
 
-2.  **Start developing.**
+1. Clone the repository.
 
-    Navigate into your new site’s directory and start it up.
+2. Copy the Pipedream workflow "Get Appointments Calendar":
 
-    ```shell
-    cd my-gatsby-site/
-    npm run develop
-    ```
+   - Workflow Link: [Get Appointments Calendar](https://pipedream.com/@mirkotorrisi92/get-calendar-appointments-p_yKCzo66)
 
-3.  **Open the code and start customizing!**
+3. Copy the Pipedream workflow "Request Appointments Dispatcher":
 
-    Your site is now running at http://localhost:8000!
+   - Workflow Link: [Request Appointments Dispatcher](https://pipedream.com/@mirkotorrisi92/request-appointment-dispatcher-p_aNCpG7N)
 
-    Edit `src/pages/index.tsx` to see your site update in real-time!
+4. Create a Telegram bot.
 
-4.  **Learn more**
+5. Create a Telegram channel and add the bot and the account of the professional interested in it.
 
-    - [Documentation](https://www.gatsbyjs.com/docs/?utm_source=starter&utm_medium=readme&utm_campaign=minimal-starter-ts)
-    - [Tutorials](https://www.gatsbyjs.com/docs/tutorial/?utm_source=starter&utm_medium=readme&utm_campaign=minimal-starter-ts)
-    - [Guides](https://www.gatsbyjs.com/docs/how-to/?utm_source=starter&utm_medium=readme&utm_campaign=minimal-starter-ts)
-    - [API Reference](https://www.gatsbyjs.com/docs/api-reference/?utm_source=starter&utm_medium=readme&utm_campaign=minimal-starter-ts)
-    - [Plugin Library](https://www.gatsbyjs.com/plugins?utm_source=starter&utm_medium=readme&utm_campaign=minimal-starter-ts)
-    - [Cheat Sheet](https://www.gatsbyjs.com/docs/cheat-sheet/?utm_source=starter&utm_medium=readme&utm_campaign=minimal-starter-ts)
+6. Create a Google account or use the Google account credentials of the professional.
 
-## 🚀 Quick start (Netlify)
+7. Fill in the Pipedream workflows with the data related to the Telegram bot, channel, and Google account.
 
-Deploy this starter with one click on [Netlify](https://app.netlify.com/signup):
+8. Replace the API links exposed by the two Pipedream workflows in the "environment.ts" file.
 
-[<img src="https://www.netlify.com/img/deploy/button.svg" alt="Deploy to Netlify" />](https://app.netlify.com/start/deploy?repository=https://github.com/gatsbyjs/gatsby-starter-minimal-ts)
+## Notes
+
+- Pipedream is a paid service, but it has a generous free tier.
+
+Have any questions or need assistance? Feel free to reach out!

@@ -1,0 +1,27 @@
+.calendar-week {
+  background-color: var(--white);
+  .header {
+    background-color: var(--shade);
+    *:hover {
+      cursor: pointer;
+    }
+  }
+}
+
+.today {
+  background-color: var(--shade);
+}
+
+.slot {
+  background-color: var(--discreet);
+  border-radius: 8px;
+  &:hover {
+    cursor: pointer;
+  }
+  &.busy {
+    opacity: 0.2;
+    &:hover {
+      cursor: initial;
+    }
+  }
+}
