@@ -1,6 +1,6 @@
 # Schedule Mate Documentation
 
-Schedule Mate is a service that allows professionals to schedule appointments with their clients by displaying their available time slots. Appointments are saved in the professional's Google Calendar, while appointment requests are received through a Telegram channel, which allows the professional to save the appointment to their calendar with the click of a button.
+Schedule Mate is a service that allows professionals to provide their clients with a calendar through which the clients can book an appointment. Appointments are saved in the professional's Google Calendar, while appointment requests are received through a Telegram channel, which allows the professional to save the appointment to their calendar with the click of a button.
 
 The service is built using Gatsby for the front end and Pipedream for the back end.
 

@@ -12,9 +12,9 @@ const IndexPage: React.FC<PageProps> = () => {
       <div className="mb-8">
         <h1 className="text-left text-2xl lg:text-8xl mb-4">Schedule mate</h1>
         <p>
-          Schedule Mate is a service that allows professionals to schedule
-          appointments with their clients by displaying their available time
-          slots.
+          Schedule Mate is a service that allows professionals to provide their
+          clients with a calendar through which the clients can book an
+          appointment.
         </p>
         <p>
           {" "}
