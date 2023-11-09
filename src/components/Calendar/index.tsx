@@ -5,16 +5,29 @@ import { ModalProvider } from "../../context/ModalContext";
 import { useCalendar } from "./useCalendar";
 
 const Calendar = () => {
-  const { week, setWeek, WEEKDAYS, dayOfWeek, slicedEvents } = useCalendar();
+  const { week, setWeek, WEEKDAYS, todayIndexOnWeek, slicedEvents } =
+    useCalendar();
   return (
     <ModalProvider>
-      <div className="calendar-week">
+      <div className="calendar-week rounded-md overflow-hidden">
         <div className="flex justify-between p-3 header">
           {!!week && (
-            <span onClick={() => setWeek((prev) => prev - 1)}>{"<"}</span>
+            <span
+              className="underline"
+              onClick={() => setWeek((prev) => prev - 1)}
+            >
+              {"< Past week"}
+            </span>
           )}
-          <span onClick={() => setWeek(0)}>Today</span>
-          <span onClick={() => setWeek((prev) => prev + 1)}>{">"}</span>
+          <span className="underline" onClick={() => setWeek(0)}>
+            This week
+          </span>
+          <span
+            className="underline"
+            onClick={() => setWeek((prev) => prev + 1)}
+          >
+            {"Next week >"}
+          </span>
         </div>
 
         <ol className="font-bold py-2 grid grid-cols-5">
@@ -22,7 +35,7 @@ const Calendar = () => {
             <li className="text-center mx-2" key={day}>
               {day}
               <Day
-                numberOfDays={index + 1 - dayOfWeek + 7 * week}
+                numOfDaysFromToday={index + 1 - todayIndexOnWeek + 7 * week}
                 appointments={slicedEvents}
               />
             </li>

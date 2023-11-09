@@ -8,9 +8,9 @@ import "./index.scss";
 
 const IndexPage: React.FC<PageProps> = () => {
   return (
-    <main className="py-4 container flex flex-col items-center justify-center">
+    <main className="py-4 px-2 container flex flex-col items-center justify-center">
       <div className="mb-8">
-        <h1 className="text-left text-8xl mb-4">Schedule mate</h1>
+        <h1 className="text-left text-2xl lg:text-8xl mb-4">Schedule mate</h1>
         <p>
           Schedule Mate is a service that allows professionals to schedule
           appointments with their clients by displaying their available time
