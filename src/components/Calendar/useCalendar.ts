@@ -12,7 +12,8 @@ const WEEKDAYS = ["Mon", "Tue", "Wed", "Thu", "Fri"];
 const todayIndexOnWeek = dayjs().weekday();
 
 export const useCalendar = () => {
-  const [week, setWeek] = useState(0);
+  // if current day is saturday (6), show new week by default (sunday is 0)
+  const [week, setWeek] = useState(todayIndexOnWeek === 6 ? 1 : 0);
   const [events, setEvents] = useState([]);
 
   useEffect(() => {
